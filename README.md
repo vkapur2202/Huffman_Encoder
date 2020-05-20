@@ -6,4 +6,5 @@ Implemented a priority queue to create a list of increasing frequency of charact
 1. Open up your facorite terminal
 2. Make sure your workding directory contains the com.jetbrains package.
 3. run program using using the following format:
-    - java HuffmanCompressor inputFile outputFile
+
+<pre><code>java HuffmanCompressor inputFile outputFile</code></pre>
