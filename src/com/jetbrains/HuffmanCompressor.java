@@ -1,5 +1,6 @@
 package com.jetbrains;
 import java.io.*;
+import java.nio.file.Files;
 import java.util.*;
 
 /**
@@ -24,7 +25,7 @@ public class HuffmanCompressor {
             return ("Input file error");
         }
         try{
-            BufferedWriter output = new BufferedWriter(new FileWriter(outputFileName)); //create a writer to output
+            BufferedWriter output = Files.newBufferedWriter(outputFileName.toPath()); //create a writer to output
             BufferedReader bufferedReader = new BufferedReader(new FileReader(new File(inputFileName))); //create a reader to scan the input
             int tempNumber;
             String code;
